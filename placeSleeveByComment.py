@@ -43,10 +43,24 @@ for e in elements:
 
 	if comment == "UP TO WC":
 		sleeve = four_in_wc_sleeve
-	if comment == "UP TO SH":
+	elif comment == "UP TO SH":
 		sleeve = six_in_sleeve
-	if comment == "UP TO TB":
+	elif comment == "UP TO TB":
 		sleeve = two_in_tb_sleeve
+	else:
+		if size <= 0.175:
+			sleeve = two_in_sleeve
+		elif size <= 0.26:
+			sleeve = three_in_sleeve
+		elif size <= 0.35:
+			sleeve = four_in_sleeve
+		elif size <= 0.51:
+			sleeve = six_in_sleeve
+		elif size <= 0.668:
+			sleeve = ten_in_sleeve
+		elif size <= 2:
+			sleeve = twelve_in_sleeve
+			"""
 	if not bool(comment):
 		if size <= 0.175:
 			sleeve = two_in_sleeve
@@ -62,7 +76,7 @@ for e in elements:
 			sleeve = twelve_in_sleeve
 		#else
 			#TaskDialog.Show("Example Title", "Example Text")
-	
+	"""
 	p.append(origin_x)
 	p.append(origin_y)
 	p.append(origin_z)
@@ -73,41 +87,7 @@ for e in elements:
 	p.append(e.Id)
 	out.append(p)
 
-"""
-	if e.CenterlineLength > 0: 
-		p = []
-		
-		id = e.Id
-		name = e.Name
-		origin = e.Origin
-		origin_x = origin.X
-		origin_y = origin.Y
-		origin_z = origin.Z
-		direction = e.Location.Curve.Direction
-		direction_z = round(direction.Z, 1)
-		
-		#direction = e.Location.Curve.Direction
-		#direction_x = round(direction.X, 1)
-		#direction_y = round(direction.Y, 1)
-		#direction_z = round(direction.Z, 1)
-		
-		length = e.CenterlineLength
-		
-		workset = doc.GetWorksetTable().GetWorkset(e.WorksetId).Name
-		
-		p.append(id)
-		p.append(name)
-		p.append(workset)
-		p.append(origin_x)
-		p.append(origin_y)
-		p.append(origin_z)
-		p.append(length)
-		p.append(direction_z)
-		p.append(e)
-		
-		out.append(p)
 
-"""
 
 # Assign your output to the OUT variable.
 OUT = out

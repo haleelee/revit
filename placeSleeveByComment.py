@@ -32,7 +32,6 @@ elevation = UnwrapElement(IN[12])
 out = []
 
 # Place your code below this line
-#for e in elements:
 for e in elements:
 	p = []
 	sleeve = 0;

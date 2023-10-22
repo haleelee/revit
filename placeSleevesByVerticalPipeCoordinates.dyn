@@ -41,8 +41,8 @@
     {
       "Id": "78cbb7c9da7f4baaa6c392743053155f",
       "Name": "Number of instances placed",
-      "Type": "integer",
-      "InitialValue": "3",
+      "Type": "unknown",
+      "InitialValue": "",
       "Description": "Visualize the output of node."
     },
     {
@@ -5111,14 +5111,7 @@
       ]
     }
   ],
-  "Bindings": [
-    {
-      "NodeId": "25769581-c8f9-42d7-aee0-af1ae0fe3c33",
-      "Binding": {
-        "ByPointAndLevel_InClassDecl-1_InFunctionScope-1_Instance0_25769581-c8f9-42d7-aee0-af1ae0fe3c33": "PFNPQVAtRU5WOkVudmVsb3BlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOlNPQVAtRU5DPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyIgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIiB4bWxuczpjbHI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vc29hcC9lbmNvZGluZy9jbHIvMS4wIiBTT0FQLUVOVjplbmNvZGluZ1N0eWxlPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyI+DQo8U09BUC1FTlY6Qm9keT4NCjxhMTpDYWxsU2l0ZV94MDAyQl9UcmFjZVNlcmlhbGlzZXJIZWxwZXIgaWQ9InJlZi0xIiB4bWxuczphMT0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9jbHIvbnNhc3NlbS9Qcm90b0NvcmUvUHJvdG9Db3JlJTJDJTIwVmVyc2lvbiUzRDIuNi4yLjE1NzA1JTJDJTIwQ3VsdHVyZSUzRG5ldXRyYWwlMkMlMjBQdWJsaWNLZXlUb2tlbiUzRG51bGwiPg0KPE51bWJlck9mRWxlbWVudHM+MTwvTnVtYmVyT2ZFbGVtZW50cz4NCjxCYXNlLTBfSGFzRGF0YT5mYWxzZTwvQmFzZS0wX0hhc0RhdGE+DQo8QmFzZS0wX0hhc05lc3RlZERhdGE+dHJ1ZTwvQmFzZS0wX0hhc05lc3RlZERhdGE+DQo8QmFzZS0wX05lc3RlZERhdGFDb3VudD4zPC9CYXNlLTBfTmVzdGVkRGF0YUNvdW50Pg0KPEJhc2UtMC0wX0hhc0RhdGE+dHJ1ZTwvQmFzZS0wLTBfSGFzRGF0YT4NCjxCYXNlLTAtMF9EYXRhIGlkPSJyZWYtMyI+UEZOUFFWQXRSVTVXT2tWdWRtVnNiM0JsSUhodGJHNXpPbmh6YVQwaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNUzlZVFV4VFkyaGxiV0V0YVc1emRHRnVZMlVpSUhodGJHNXpPbmh6WkQwaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNUzlZVFV4VFkyaGxiV0VpSUhodGJHNXpPbE5QUVZBdFJVNURQU0pvZEhSd09pOHZjMk5vWlcxaGN5NTRiV3h6YjJGd0xtOXlaeTl6YjJGd0wyVnVZMjlrYVc1bkx5SWdlRzFzYm5NNlUwOUJVQzFGVGxZOUltaDBkSEE2THk5elkyaGxiV0Z6TG5odGJITnZZWEF1YjNKbkwzTnZZWEF2Wlc1MlpXeHZjR1V2SWlCNGJXeHVjenBqYkhJOUltaDBkSEE2THk5elkyaGxiV0Z6TG0xcFkzSnZjMjltZEM1amIyMHZjMjloY0M5bGJtTnZaR2x1Wnk5amJISXZNUzR3SWlCVFQwRlFMVVZPVmpwbGJtTnZaR2x1WjFOMGVXeGxQU0pvZEhSd09pOHZjMk5vWlcxaGN5NTRiV3h6YjJGd0xtOXlaeTl6YjJGd0wyVnVZMjlrYVc1bkx5SStEUW84VTA5QlVDMUZUbFk2UW05a2VUNE5DanhoTVRwVFpYSnBZV3hwZW1GaWJHVkpaQ0JwWkQwaWNtVm1MVEVpSUhodGJHNXpPbUV4UFNKb2RIUndPaTh2YzJOb1pXMWhjeTV0YVdOeWIzTnZablF1WTI5dEwyTnNjaTl1YzJGemMyVnRMMUpsZG1sMFUyVnlkbWxqWlhNdVVHVnljMmx6ZEdWdVkyVXZVbVYyYVhSVFpYSjJhV05sY3lVeVF5VXlNRlpsY25OcGIyNGxNMFF5TGpZdU1pNHhPRFF6TUNVeVF5VXlNRU4xYkhSMWNtVWxNMFJ1WlhWMGNtRnNKVEpESlRJd1VIVmliR2xqUzJWNVZHOXJaVzRsTTBSdWRXeHNJajROQ2p4emRISnBibWRKUkNCcFpEMGljbVZtTFRNaVBqZzRZV0UzWVdGakxUUTFaak10TkRFMFpDMWhORGc0TFRabFpUaGlOREV4TlRVNVlpMHdNREkyWXpJMk9Ed3ZjM1J5YVc1blNVUStEUW84YVc1MFNVUStNalUwTURFek5qd3ZhVzUwU1VRK0RRbzhMMkV4T2xObGNtbGhiR2w2WVdKc1pVbGtQZzBLUEM5VFQwRlFMVVZPVmpwQ2IyUjVQZzBLUEM5VFQwRlFMVVZPVmpwRmJuWmxiRzl3WlQ0TkNnPT08L0Jhc2UtMC0wX0RhdGE+DQo8QmFzZS0wLTBfSGFzTmVzdGVkRGF0YT5mYWxzZTwvQmFzZS0wLTBfSGFzTmVzdGVkRGF0YT4NCjxCYXNlLTAtMV9IYXNEYXRhPnRydWU8L0Jhc2UtMC0xX0hhc0RhdGE+DQo8QmFzZS0wLTFfRGF0YSBpZD0icmVmLTQiPlBGTlBRVkF0UlU1V09rVnVkbVZzYjNCbElIaHRiRzV6T25oemFUMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TVM5WVRVeFRZMmhsYldFdGFXNXpkR0Z1WTJVaUlIaHRiRzV6T25oelpEMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TVM5WVRVeFRZMmhsYldFaUlIaHRiRzV6T2xOUFFWQXRSVTVEUFNKb2RIUndPaTh2YzJOb1pXMWhjeTU0Yld4emIyRndMbTl5Wnk5emIyRndMMlZ1WTI5a2FXNW5MeUlnZUcxc2JuTTZVMDlCVUMxRlRsWTlJbWgwZEhBNkx5OXpZMmhsYldGekxuaHRiSE52WVhBdWIzSm5MM052WVhBdlpXNTJaV3h2Y0dVdklpQjRiV3h1Y3pwamJISTlJbWgwZEhBNkx5OXpZMmhsYldGekxtMXBZM0p2YzI5bWRDNWpiMjB2YzI5aGNDOWxibU52WkdsdVp5OWpiSEl2TVM0d0lpQlRUMEZRTFVWT1ZqcGxibU52WkdsdVoxTjBlV3hsUFNKb2RIUndPaTh2YzJOb1pXMWhjeTU0Yld4emIyRndMbTl5Wnk5emIyRndMMlZ1WTI5a2FXNW5MeUkrRFFvOFUwOUJVQzFGVGxZNlFtOWtlVDROQ2p4aE1UcFRaWEpwWVd4cGVtRmliR1ZKWkNCcFpEMGljbVZtTFRFaUlIaHRiRzV6T21FeFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1dGFXTnliM052Wm5RdVkyOXRMMk5zY2k5dWMyRnpjMlZ0TDFKbGRtbDBVMlZ5ZG1salpYTXVVR1Z5YzJsemRHVnVZMlV2VW1WMmFYUlRaWEoyYVdObGN5VXlReVV5TUZabGNuTnBiMjRsTTBReUxqWXVNaTR4T0RRek1DVXlReVV5TUVOMWJIUjFjbVVsTTBSdVpYVjBjbUZzSlRKREpUSXdVSFZpYkdsalMyVjVWRzlyWlc0bE0wUnVkV3hzSWo0TkNqeHpkSEpwYm1kSlJDQnBaRDBpY21WbUxUTWlQamc0WVdFM1lXRmpMVFExWmpNdE5ERTBaQzFoTkRnNExUWmxaVGhpTkRFeE5UVTVZaTB3TURJMll6STJZVHd2YzNSeWFXNW5TVVErRFFvOGFXNTBTVVErTWpVME1ERXpPRHd2YVc1MFNVUStEUW84TDJFeE9sTmxjbWxoYkdsNllXSnNaVWxrUGcwS1BDOVRUMEZRTFVWT1ZqcENiMlI1UGcwS1BDOVRUMEZRTFVWT1ZqcEZiblpsYkc5d1pUNE5DZz09PC9CYXNlLTAtMV9EYXRhPg0KPEJhc2UtMC0xX0hhc05lc3RlZERhdGE+ZmFsc2U8L0Jhc2UtMC0xX0hhc05lc3RlZERhdGE+DQo8QmFzZS0wLTJfSGFzRGF0YT50cnVlPC9CYXNlLTAtMl9IYXNEYXRhPg0KPEJhc2UtMC0yX0RhdGEgaWQ9InJlZi01Ij5QRk5QUVZBdFJVNVdPa1Z1ZG1Wc2IzQmxJSGh0Ykc1ek9uaHphVDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRXRhVzV6ZEdGdVkyVWlJSGh0Ykc1ek9uaHpaRDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRWlJSGh0Ykc1ek9sTlBRVkF0UlU1RFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1NGJXeHpiMkZ3TG05eVp5OXpiMkZ3TDJWdVkyOWthVzVuTHlJZ2VHMXNibk02VTA5QlVDMUZUbFk5SW1oMGRIQTZMeTl6WTJobGJXRnpMbmh0YkhOdllYQXViM0puTDNOdllYQXZaVzUyWld4dmNHVXZJaUI0Yld4dWN6cGpiSEk5SW1oMGRIQTZMeTl6WTJobGJXRnpMbTFwWTNKdmMyOW1kQzVqYjIwdmMyOWhjQzlsYm1OdlpHbHVaeTlqYkhJdk1TNHdJaUJUVDBGUUxVVk9WanBsYm1OdlpHbHVaMU4wZVd4bFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1NGJXeHpiMkZ3TG05eVp5OXpiMkZ3TDJWdVkyOWthVzVuTHlJK0RRbzhVMDlCVUMxRlRsWTZRbTlrZVQ0TkNqeGhNVHBUWlhKcFlXeHBlbUZpYkdWSlpDQnBaRDBpY21WbUxURWlJSGh0Ykc1ek9tRXhQU0pvZEhSd09pOHZjMk5vWlcxaGN5NXRhV055YjNOdlpuUXVZMjl0TDJOc2NpOXVjMkZ6YzJWdEwxSmxkbWwwVTJWeWRtbGpaWE11VUdWeWMybHpkR1Z1WTJVdlVtVjJhWFJUWlhKMmFXTmxjeVV5UXlVeU1GWmxjbk5wYjI0bE0wUXlMall1TWk0eE9EUXpNQ1V5UXlVeU1FTjFiSFIxY21VbE0wUnVaWFYwY21Gc0pUSkRKVEl3VUhWaWJHbGpTMlY1Vkc5clpXNGxNMFJ1ZFd4c0lqNE5Danh6ZEhKcGJtZEpSQ0JwWkQwaWNtVm1MVE1pUGpnNFlXRTNZV0ZqTFRRMVpqTXROREUwWkMxaE5EZzRMVFpsWlRoaU5ERXhOVFU1WWkwd01ESTJZekkyWXp3dmMzUnlhVzVuU1VRK0RRbzhhVzUwU1VRK01qVTBNREUwTUR3dmFXNTBTVVErRFFvOEwyRXhPbE5sY21saGJHbDZZV0pzWlVsa1BnMEtQQzlUVDBGUUxVVk9WanBDYjJSNVBnMEtQQzlUVDBGUUxVVk9WanBGYm5abGJHOXdaVDROQ2c9PTwvQmFzZS0wLTJfRGF0YT4NCjxCYXNlLTAtMl9IYXNOZXN0ZWREYXRhPmZhbHNlPC9CYXNlLTAtMl9IYXNOZXN0ZWREYXRhPg0KPC9hMTpDYWxsU2l0ZV94MDAyQl9UcmFjZVNlcmlhbGlzZXJIZWxwZXI+DQo8L1NPQVAtRU5WOkJvZHk+DQo8L1NPQVAtRU5WOkVudmVsb3BlPg0K"
-      }
-    }
-  ],
+  "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
@@ -5978,8 +5971,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 5811.6468305641647,
-        "Y": 8385.5194766006243
+        "X": 6066.1877897766617,
+        "Y": 8323.7023865061565
       },
       {
         "ShowGeometry": true,
@@ -6088,8 +6081,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": true,
         "Excluded": false,
-        "X": 6335.078167268558,
-        "Y": 8414.2413775439454
+        "X": 6335.07816726856,
+        "Y": 8414.24137754395
       },
       {
         "ShowGeometry": true,
@@ -6098,8 +6091,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": true,
         "Excluded": false,
-        "X": 6761.8313024709669,
-        "Y": 7920.3130630096521
+        "X": 6761.83130247097,
+        "Y": 7920.31306300965
       },
       {
         "ShowGeometry": true,
@@ -6109,7 +6102,7 @@
         "IsSetAsOutput": true,
         "Excluded": false,
         "X": 6355.76191394643,
-        "Y": 7919.5613196594868
+        "Y": 7919.56131965949
       },
       {
         "ShowGeometry": true,
@@ -6118,7 +6111,7 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": true,
         "Excluded": false,
-        "X": 6759.5574725799861,
+        "X": 6759.55747257999,
         "Y": 8414.56002443848
       },
       {
@@ -6283,13 +6276,13 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Watch",
+        "Name": "NEW SLEEVES THAT CAN BE PLACED WITHOUT OVERLAPPING EXISTING",
         "Id": "f70d4707ed954f8a8d18f3a3af6e01ae",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 4571.5250320119321,
-        "Y": 9496.5357164245543
+        "X": 4517.9258200874374,
+        "Y": 9536.7351253679244
       },
       {
         "ShowGeometry": true,
@@ -6348,8 +6341,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 4942.2709017443567,
-        "Y": 9499.0636218425316
+        "X": 5153.31628237673,
+        "Y": 9519.8221838719455
       },
       {
         "ShowGeometry": true,
@@ -6358,8 +6351,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 5257.4368324759007,
-        "Y": 9476.0293550899587
+        "X": 5468.4822131082738,
+        "Y": 9496.7879171193727
       },
       {
         "ShowGeometry": true,
@@ -6368,8 +6361,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 5164.8298543514838,
-        "Y": 9561.3439815557722
+        "X": 5375.8752349838569,
+        "Y": 9582.1025435851861
       },
       {
         "ShowGeometry": true,
@@ -6378,8 +6371,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 5256.4838994731335,
-        "Y": 9693.5871328140129
+        "X": 5467.5292801055066,
+        "Y": 9714.3456948434268
       },
       {
         "ShowGeometry": true,
@@ -6388,8 +6381,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 5148.0856942543933,
-        "Y": 9758.6889885990786
+        "X": 5359.1310748867663,
+        "Y": 9779.4475506284925
       }
     ],
     "Annotations": [
@@ -6759,13 +6752,13 @@
           "b26d684d9fc24957857eb1459ddec076",
           "0856ab413cf64af78c74f27ee6f390e1"
         ],
-        "Left": 6325.078167268558,
-        "Top": 7866.5613196594868,
-        "Width": 797.47930531142811,
-        "Height": 726.99870477899367,
+        "Left": 6325.07816726856,
+        "Top": 7866.56131965949,
+        "Width": 797.47930531142993,
+        "Height": 656.99870477899,
         "FontSize": 36.0,
-        "InitialTop": 7919.5613196594868,
-        "InitialHeight": 639.99870477899276,
+        "InitialTop": 7919.56131965949,
+        "InitialHeight": 639.998704778993,
         "TextblockHeight": 43.0,
         "Background": "#FF48B9FF"
       },
@@ -6847,7 +6840,7 @@
       },
       {
         "Id": "ded5877c11724916a2bb8d9d3309c712",
-        "Title": "CHECK WHETHER NEW SLEEVES INTERSECT EXISTING SLEEVES",
+        "Title": "CHECK WHETHER NEW SLEEVES INTERSECT EXISTING SLEEVES (BY POINT)",
         "Nodes": [
           "fed6de1701134126bdbbaf1a02125d92",
           "6dc4b9619d2548b6967019972219199f",
@@ -6856,11 +6849,11 @@
           "f70d4707ed954f8a8d18f3a3af6e01ae"
         ],
         "Left": 3530.4324783885168,
-        "Top": 9443.5357164245543,
-        "Width": 1341.0925536234154,
-        "Height": 337.0,
+        "Top": 9446.0892087076973,
+        "Width": 1494.4933416989206,
+        "Height": 228.23201013029393,
         "FontSize": 36.0,
-        "InitialTop": 9496.5357164245543,
+        "InitialTop": 9499.0892087076973,
         "InitialHeight": 254.7855024134351,
         "TextblockHeight": 43.0,
         "Background": "#FFD8D8D8"
@@ -6889,13 +6882,12 @@
         "Id": "cfb53145636343e59118e5f127865e2d",
         "Title": "PLACE FAMILIES!",
         "Nodes": [
-          "25769581c8f942d7aee0af1ae0fe3c33",
-          "1ee1fa71527042e1b263fd36d245099c"
+          "25769581c8f942d7aee0af1ae0fe3c33"
         ],
         "Left": 5448.5922383133711,
         "Top": 8250.2828141917962,
-        "Width": 544.05459225079358,
-        "Height": 228.23666240882812,
+        "Width": 295.0,
+        "Height": 198.0,
         "FontSize": 36.0,
         "InitialTop": 8303.2828141917962,
         "InitialHeight": 205.23666240882812,
@@ -6912,14 +6904,30 @@
           "1225e9c0a5f6417f82d23db60622be5e",
           "f73e6451671a4a878cdc1e6c93254f2f"
         ],
-        "Left": 4932.2709017443567,
-        "Top": 9207.0293550899587,
+        "Left": 5143.31628237673,
+        "Top": 9227.7879171193727,
         "Width": 514.165930731544,
         "Height": 619.65963350911989,
         "FontSize": 36.0,
-        "InitialTop": 9476.0293550899587,
+        "InitialTop": 9496.7879171193727,
         "InitialHeight": 380.65963350911989,
         "TextblockHeight": 259.0,
+        "Background": "#FFD8D8D8"
+      },
+      {
+        "Id": "04ba8fb804a5468f83912e6090b77d50",
+        "Title": "COUNT INSTANCES",
+        "Nodes": [
+          "1ee1fa71527042e1b263fd36d245099c"
+        ],
+        "Left": 6056.1877897766617,
+        "Top": 8227.7023865061565,
+        "Width": 191.81333333333333,
+        "Height": 189.0,
+        "FontSize": 36.0,
+        "InitialTop": 8323.7023865061565,
+        "InitialHeight": 123.0,
+        "TextblockHeight": 86.0,
         "Background": "#FFD8D8D8"
       },
       {
@@ -6980,10 +6988,10 @@
       },
       {
         "Id": "d72b02a0a59e4e759c70d58a543c19c1",
-        "Title": "Created by Michael Halili\r\nClient: Symetri US\r\nv1.0\r\nDate Revised: 10/17/2023\r\n\r\nDynamo Core 2.12.1.82.46\r\nDynamo Revit 2.12.1.11123\r\n\r\nPackages:\r\nLunchBox for Dynamo 2018.7.7\r\nbimorphNodes 4.2.4\r\nGenius Loci 2022.9.16\r\n\r\nDescription: \r\nThis script will place sleeve Families (Plumbing Fixture) for pipes that intersect the Linked Model Floor, at a user-specified elevation. See below for the direction from Jered w/S&K Plumbing. \r\n\r\nIn this script, the user chooses which Level to place Sleeves, which Revit Link and associated Floor Family to check intersections with vertical Fabrication Pipes, and the Elevation from Level (Offset) in inches to place the Family. Additionally, the user can choose a Parameter and value for which to filter when running the tool (i.e. run the tool for all elements on the 'SAN' workset). The script also filters by only including vertical pipes and straight pipes (by checking if the Product Short Description starts with \"Pipe\").\r\n\r\nRequest from S&K Plumbing:\r\nHilti Sleeve sizes are based on the Pipe Size.\r\nSo, if it is a 4” pipe, then a 4” Hilti sleeve will be required.\r\nAny penetration larger than 6” will need to be Steel sleeve 1 Pipe size larger. IE an 8” riser will require a 10” sleeve.\r\nAny penetration smaller than 2” will receive a 2” sleeve.\r\nHub Drains will receive a 4” Hilti sleeve.\r\nWater Closets will receive a Hilti Water Closet sleeve.\r\nProvent Aerators will receive a 4” Provent adapter and 4” Hilti Sleeve.\r\n-0'-4\" and -0'-8\" aerators sleeve\r\nShowers will receive a 6” Hilti Sleeve – this is due to the connection requirements for the fixture connection.\r\nDo not oversize sleeves for insulation purposes.\r\n\r\nSleeves will also be needed for Island Sink water lines to loop from wall to island. Some freestanding tubs may be the same as well. These sleeves will all be 2” Hilti.\r\n\r\n",
+        "Title": "Created by Michael Halili\r\nClient: Symetri US\r\nv1.01\r\nDate Revised: 10/21/2023\r\n\r\nDynamo Core 2.12.1.82.46\r\nDynamo Revit 2.12.1.11123\r\n\r\nPackages:\r\nLunchBox for Dynamo 2018.7.7\r\nbimorphNodes 4.2.4\r\nGenius Loci 2022.9.16\r\n\r\nDescription: \r\nThis script will place sleeve Families (Plumbing Fixture) for pipes that intersect the Linked Model Floor, at a user-specified elevation. See below for the direction from Jered w/S&K Plumbing. \r\n\r\nIn this script, the user chooses which Level to place Sleeves, which Revit Link and associated Floor Family to check intersections with vertical Fabrication Pipes, and the Elevation from Level (Offset) in inches to place the Family. Additionally, the user can choose a Parameter and value for which to filter when running the tool (i.e. run the tool for all elements on the 'SAN' workset). The script also filters by only including vertical pipes and straight pipes (by checking if the Product Short Description starts with \"Pipe\"). Script will not place over existing sleeves (checks point of new sleeves vs existing sleeve geometries)\r\n\r\nRequest from S&K Plumbing:\r\nHilti Sleeve sizes are based on the Pipe Size.\r\nSo, if it is a 4” pipe, then a 4” Hilti sleeve will be required.\r\nAny penetration larger than 6” will need to be Steel sleeve 1 Pipe size larger. IE an 8” riser will require a 10” sleeve.\r\nAny penetration smaller than 2” will receive a 2” sleeve.\r\nHub Drains will receive a 4” Hilti sleeve.\r\nWater Closets will receive a Hilti Water Closet sleeve.\r\nProvent Aerators will receive a 4” Provent adapter and 4” Hilti Sleeve.\r\n-0'-4\" and -0'-8\" aerators sleeve\r\nShowers will receive a 6” Hilti Sleeve – this is due to the connection requirements for the fixture connection.\r\nDo not oversize sleeves for insulation purposes.\r\n\r\nSleeves will also be needed for Island Sink water lines to loop from wall to island. Some freestanding tubs may be the same as well. These sleeves will all be 2” Hilti.\r\n\r\n",
         "Nodes": [],
-        "Left": -2588.1882540731185,
-        "Top": 5048.1007582723569,
+        "Left": -2533.8716320685776,
+        "Top": 4881.7561033834509,
         "Width": 0.0,
         "Height": 0.0,
         "FontSize": 36.0,
@@ -7175,8 +7183,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": 339.10749004357524,
-    "Y": -1215.5911759762203,
-    "Zoom": 0.20421256008309238
+    "X": -1672.9757401445145,
+    "Y": -3136.3345459551183,
+    "Zoom": 0.41473179921504821
   }
 }

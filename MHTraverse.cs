@@ -25,6 +25,7 @@ namespace MHQuickSelect20230916
             m_pDoc = pUIApp.ActiveUIDocument.Document;
             ElementId selId = obj.ElementId;
             TaskDialog.Show("Selection: ", selId.ToString());
+            double totalAngleDeg = 0;
             Element elemRun = m_pDoc.GetElement(selId);
             m_lVisited.Add(selId);
             RunStepThroughElements(elemRun.Id);
@@ -36,15 +37,23 @@ namespace MHQuickSelect20230916
                 RunStepThroughElements(m_lVisited[indexVisited]);
                 indexVisited++;
             }
+            List <ElementId> m_lVisitedClean = m_lVisited.Distinct().ToList();
 
             ////
             StringBuilder sb = new StringBuilder();
-            foreach (ElementId el in m_lVisited.Distinct().ToList())
+            foreach (ElementId el in m_lVisitedClean)
             {
                 sb.Append(el.ToString() + "\n");
             }
             TaskDialog.Show("m_lVisited: ", sb.ToString());
             ////
+            ///
+            foreach (ElementId eid in m_lVisitedClean)
+            {
+                totalAngleDeg += CalcAngleSum(m_pDoc.GetElement(eid));
+            }
+            TaskDialog.Show("Total Angle Sum: ", "Total Degrees Bend: " + totalAngleDeg.ToString() + "°");
+
         }
 
         public void InitializeLists()
@@ -91,7 +100,7 @@ namespace MHQuickSelect20230916
         {
             return (pConn.Owner == pPrevElement) ||
                    (pConn.Owner.Id == pPrevElement.Id) ||
-                   (pConn.Domain != Domain.DomainCableTrayConduit) || (lVisited.Contains(pConn.Owner.Id))   //Change Domain based on need
+                   (pConn.Domain != Domain.DomainCableTrayConduit) || (lVisited.Contains(pConn.Owner.Id))  //Change Domain based on need
                    ;
         }
         /// <summary>
@@ -123,6 +132,21 @@ namespace MHQuickSelect20230916
                 result = conn.IsConnected;
             }
             return result;
+        }
+
+        public double CalcAngleSum(Element elem)
+        {
+            double angleSum = 0;
+            if (elem is FamilyInstance)
+            {
+                Parameter parameter1 = elem.LookupParameter("Angle");
+                if (elem is FamilyInstance) angleSum += ConvertAngleToDouble(parameter1);
+            }
+            return angleSum;
+        }
+        public double ConvertAngleToDouble(Parameter param)
+        {
+            return Convert.ToDouble(param.AsValueString().Remove(param.AsValueString().Length - 1, 1));
         }
     }
     

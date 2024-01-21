@@ -25,34 +25,20 @@ namespace MHQuickSelect20230916
             m_pDoc = pUIApp.ActiveUIDocument.Document;
             ElementId selId = obj.ElementId;
             TaskDialog.Show("Selection: ", selId.ToString());
-            double totalAngleDeg = 0;
             Element elemRun = m_pDoc.GetElement(selId);
-            m_lVisited.Add(selId);
-            RunStepThroughElements(elemRun.Id);
-
-            int indexVisited = 1;
-            
-            while (indexVisited < MAX_LOOPS && CheckIfConnected(m_pDoc.GetElement(m_lVisited[indexVisited])))
+            List<ElementId> listConduitsinRun = GetConduitsinRun(elemRun);
+            foreach(ElementId id in listConduitsinRun)
             {
-                RunStepThroughElements(m_lVisited[indexVisited]);
-                indexVisited++;
+                RunStepThroughElements(id);
+                m_lVisited.Add(id);
             }
-            List <ElementId> m_lVisitedClean = m_lVisited.Distinct().ToList();
-
-            ////
+            List<ElementId> m_lVisitedClean = m_lVisited.Distinct().ToList();
             StringBuilder sb = new StringBuilder();
             foreach (ElementId el in m_lVisitedClean)
             {
                 sb.Append(el.ToString() + "\n");
             }
-            TaskDialog.Show("m_lVisited: ", sb.ToString());
-            ////
-            ///
-            foreach (ElementId eid in m_lVisitedClean)
-            {
-                totalAngleDeg += CalcAngleSum(m_pDoc.GetElement(eid));
-            }
-            TaskDialog.Show("Total Angle Sum: ", "Total Degrees Bend: " + totalAngleDeg.ToString() + "°");
+            TaskDialog.Show("m_lVisited: ", sb.ToString() + "\n" + "Count is: " + m_lVisitedClean.Count.ToString());
 
         }
 
@@ -147,6 +133,32 @@ namespace MHQuickSelect20230916
         public double ConvertAngleToDouble(Parameter param)
         {
             return Convert.ToDouble(param.AsValueString().Remove(param.AsValueString().Length - 1, 1));
+        }
+        public List<ElementId> GetConduitsinRun(Element elem)
+        {
+            List<ElementId> list = new List<ElementId>();   
+            IList<Element> condCollector = new FilteredElementCollector(m_pDoc).OfClass(typeof(Conduit)).ToElements();
+            if (elem is FamilyInstance)
+            {
+                var connSet = GetConnectors(elem);
+                foreach (Connector conn in connSet)
+                {
+                    Element elemNext = GetNextConnectedElement(conn, elem, m_lVisited);
+                    elem = elemNext;
+                }
+            }
+            //This code only works if a Conduit is selected (not a fitting)
+            StringBuilder sb = new StringBuilder();
+            foreach(Element e in condCollector)
+            {
+                if (e is Conduit && ((Conduit)e)?.RunId == ((Conduit)elem)?.RunId)
+                {
+                    list.Add(e.Id);
+                    sb.Append(e.Id.ToString() + "\n");
+                }
+            }
+            TaskDialog.Show("Conduit Run id: ", sb.ToString() + "\n" + "Count is: " + list.Count.ToString());
+            return list;
         }
     }
     
